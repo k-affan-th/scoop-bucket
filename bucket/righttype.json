@@ -1,0 +1,34 @@
+{
+  "version": "2.6.3",
+  "description": "Fix wrong-keyboard-layout Thai/English typing — a modern, safe Rust successor to RightLang",
+  "homepage": "https://github.com/k-affan-th/RightType",
+  "license": "MIT OR Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/k-affan-th/RightType/releases/download/v2.6.3/RightType-2.6.3-x64.zip",
+      "hash": "748a9ed35af7f4cf9f86728bd943e53742110dc7205de0910f3817b69c101bc6"
+    },
+    "arm64": {
+      "url": "https://github.com/k-affan-th/RightType/releases/download/v2.6.3/RightType-2.6.3-arm64.zip",
+      "hash": "210ceecdd1040fa0aa82bd54525b2ddcdfbc2839f1c82b054705c3a93b9caacf"
+    }
+  },
+  "bin": "righttype.exe",
+  "shortcuts": [
+    [
+      "righttype.exe",
+      "RightType"
+    ]
+  ],
+  "checkver": "github",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/k-affan-th/RightType/releases/download/v$version/RightType-$version-x64.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/k-affan-th/RightType/releases/download/v$version/RightType-$version-arm64.zip"
+      }
+    }
+  }
+}
